@@ -1,0 +1,41 @@
+\hypertarget{cod2_8cpp}{\section{L\-B/cod2.cpp File Reference}
+\label{cod2_8cpp}\index{L\-B/cod2.\-cpp@{L\-B/cod2.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}Sort2.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{cod2_8cpp_a693e3a6cedce263db2b558a81ab367aa}{merge} (int $\ast$a, int first, int last)
+\begin{DoxyCompactList}\small\item\em Функция сортировки \end{DoxyCompactList}\item 
+void \hyperlink{cod2_8cpp_ae7a1cfd6e07527f488e5e3d151881601}{sort2} (int $\ast$a, int first, int last)
+\begin{DoxyCompactList}\small\item\em Функция сортировки \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{cod2_8cpp_a693e3a6cedce263db2b558a81ab367aa}{\index{cod2.\-cpp@{cod2.\-cpp}!merge@{merge}}
+\index{merge@{merge}!cod2.cpp@{cod2.\-cpp}}
+\subsubsection[{merge}]{\setlength{\rightskip}{0pt plus 5cm}void merge (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{a, }
+\item[{int}]{first, }
+\item[{int}]{last}
+\end{DoxyParamCaption}
+)}}\label{cod2_8cpp_a693e3a6cedce263db2b558a81ab367aa}
+
+
+Функция сортировки 
+
+Для решения задачи сортировки эти три этапа выглядят так\-: Сортируемый массив разбивается на две части примерно одинакового размера; Каждая из получившихся частей сортируется отдельно, например — тем же самым алгоритмом; Два упорядоченных массива половинного размера соединяются в один. 1.\-1. -\/ 2.\-1. Рекурсивное разбиение задачи на меньшие происходит до тех пор, пока размер массива не достигнет единицы (любой массив длины 1 можно считать упорядоченным). 3.\-1. Соединение двух упорядоченных массивов в один. Основную идею слияния двух отсортированных массивов можно объяснить на следующем примере. Пусть мы имеем два подмассива. Пусть также, элементы подмассивов в каждом из этих подмас-\/ сивов отсортированы по возрастанию. Тогда\-: 3.\-2. Слияние двух подмассивов в третий результирующий массив. На каждом шаге мы берём меньший из двух первых элементов подмассивов и записываем его в результирующий массив. Счетчики номеров элементов результирующего массива и подмассива из которого был взят элемент увеличиваем на 1. 3.\-3. \char`\"{}Прицепление\char`\"{} остатка. Когда один из подмассивов закончился, мы добавляем все оставшиеся элементы второго подмас-\/ сива в результирующий массив. \hypertarget{cod2_8cpp_ae7a1cfd6e07527f488e5e3d151881601}{\index{cod2.\-cpp@{cod2.\-cpp}!sort2@{sort2}}
+\index{sort2@{sort2}!cod2.cpp@{cod2.\-cpp}}
+\subsubsection[{sort2}]{\setlength{\rightskip}{0pt plus 5cm}void sort2 (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{a, }
+\item[{int}]{first, }
+\item[{int}]{last}
+\end{DoxyParamCaption}
+)}}\label{cod2_8cpp_ae7a1cfd6e07527f488e5e3d151881601}
+
+
+Функция сортировки 
+
+Функция сортировки массива целых чисел методом слияния. Функция имеет тип void и принимает указатель на массив, индексы начала и конца промежутка сортировки. Описание функции содержится в дополнительном файле .../\-Sort2.cpp 

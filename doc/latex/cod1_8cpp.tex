@@ -1,0 +1,29 @@
+\hypertarget{cod1_8cpp}{\section{L\-B/cod1.cpp File Reference}
+\label{cod1_8cpp}\index{L\-B/cod1.\-cpp@{L\-B/cod1.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}Sort1.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{cod1_8cpp_ad560bebc850767d8107267b1a6eeea22}{sort1} (int $\ast$a, int num)
+\begin{DoxyCompactList}\small\item\em Реализация алгоритма сортировки \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{cod1_8cpp_ad560bebc850767d8107267b1a6eeea22}{\index{cod1.\-cpp@{cod1.\-cpp}!sort1@{sort1}}
+\index{sort1@{sort1}!cod1.cpp@{cod1.\-cpp}}
+\subsubsection[{sort1}]{\setlength{\rightskip}{0pt plus 5cm}void sort1 (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{a, }
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)}}\label{cod1_8cpp_ad560bebc850767d8107267b1a6eeea22}
+
+
+Реализация алгоритма сортировки 
+
+Функция сортировки
+
+Реализация алгоритма сортировки массива целых чисел методом пузырька. Функция имеет тип void и принимает указатель на массив и размер массива.
+
+Алгоритм состоит из повторяющихся проходов по сортируемому массиву. За каждый проход элементы последовательно сравниваются попарно и, если по-\/ рядок в паре неверный, выполняется обмен элементов. Проходы по массиву повторяются N-\/1 раз или до тех пор, пока на очередном проходе не окажет-\/ ся, что обмены больше не нужны, что означает — массив отсортирован. При каждом проходе алгоритма по внутреннему циклу, очередной наибольший эле-\/ мент массива ставится на своё место в конце массива рядом с предыдущим «наибольшим элементом», а наименьший элемент перемещается на одну пози-\/ цию к началу массива («всплывает» до нужной позиции как пузырёк в воде, отсюда и название алгоритма). 
